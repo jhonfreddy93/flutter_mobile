@@ -16,16 +16,27 @@ class CytiesPage extends StatelessWidget {
           color: Colors.black,
         ),
       ),
-      body: Center(
-        child: ConstrainedBox(
-          constraints: BoxConstraints(maxWidth: maxPageWidth),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              HeaderWidget(
-                title: 'Mis ciudades',
-              ),
-            ],
+      floatingActionButton: Container(
+          width: MediaQuery.of(context).size.width * 0.17,
+          height: MediaQuery.of(context).size.width * 0.17,
+          child: FloatingActionButton(
+            child: Icon(Icons.add),
+            backgroundColor: primaryColor,
+            onPressed: () {},
+          )),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Center(
+          child: Container(
+            constraints: BoxConstraints(maxWidth: maxPagewidthinfo),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                HeaderWidget(
+                  title: 'Mis ciudades',
+                ),
+              ],
+            ),
           ),
         ),
       ),
