@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:weatherflu/ui/cities/citys_page.dart';
+import 'package:weatherflu/ui/uicosntants.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -23,15 +24,17 @@ class _HomePageState extends State<HomePage> {
     print(MediaQuery.of(context).size);
     return Scaffold(
         body: Stack(
-      fit: StackFit.expand,
       children: [
-        Positioned.fill(
-          child: Image.asset('assets/welcome.jpg'),
+        Image(
+          image: AssetImage('assets/welcome.jpg'),
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.height,
+          fit: BoxFit.cover,
         ),
         SafeArea(
           child: Center(
             child: Container(
-              constraints: BoxConstraints(maxWidth: 250),
+              constraints: BoxConstraints(maxWidth: maxPageWidth),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
