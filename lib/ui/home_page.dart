@@ -25,6 +25,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         body: Stack(
       children: [
+        /*imagen de fondo de la pantalla de inicio utilzando mediaquery se adapta a
+              a la pantalla*/
         Image(
           image: AssetImage('assets/welcome.jpg'),
           width: MediaQuery.of(context).size.width,

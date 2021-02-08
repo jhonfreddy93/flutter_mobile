@@ -22,7 +22,7 @@ class HeaderWidget extends StatelessWidget {
         ),
         Divider(
           height: 50,
-          thickness: 5,
+          thickness: 3,
         ),
       ],
     );

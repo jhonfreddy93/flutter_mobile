@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      //this false banner debbug - oculta el banner debug de la pantalla
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
       home: HomePage(),
